@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0; 
+            padding: 0;
+        }
+
+        .container {
+            margin: 0; 
+            height: calc(100vh - 20px); 
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            display: flex; 
+            /* flex-wrap: wrap; */
+            /* justify-content: center; */
+            /* align-items: center; when you have space from top as you do on bottom */
+            /* align-content: center; takes # of different parameters; when you want to treat entire set of items as one component */
+            /* nice and easy way flex box give you for the ability to center items both horizontally and vertically */
+
+        }
+
+        img {
+            margin: 10px;
+            height: 70px; 
+            width: 120px; 
+        }
+
+        .img2 {
+            align-self: flex-start; /* only focusing on aligning one item; ability to call a flex item */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/1.jpg" class="img1" alt=""> <!-- img[src="images/$.jpg"]*6 -->
+        <img src="images/2.jpg" class="img2" alt="">
+        <img src="images/3.jpg" class="img3" alt="">
+    </div>
+    
+</body>
+</html>
